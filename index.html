@@ -38,7 +38,89 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
         footer {
             background-color: #ff6600; /* Bright orange */
             color: white;
-      
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #cc5200;
+        }
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Champions Pros Services</h1>
+        <p>Your Trusted Cybersecurity Partner</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Champions Pros Services specializes in delivering top-notch cybersecurity solutions to businesses in finance, healthcare, and retail industries. We are committed to keeping your data secure and ensuring compliance with industry standards.</p>
+        <img src="istockphoto-1382390334-612x612.jpg" alt="Cybersecurity team">
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Firewall and Intrusion Detection Deployment</li>
+            <li>Risk Management and Vulnerability Assessment</li>
+            <li>Regulatory Compliance Support (HIPAA, PCI DSS, GDPR)</li>
+        </ul>
+        <img src="istockphoto-480706488-1024x1024.jpg" alt="Cybersecurity service diagram">
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Champions Pros Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
